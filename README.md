@@ -36,42 +36,17 @@ A low-cost, edge-based robotic arm system using a USB camera and BeagleBone Blue
 * `color_detection.py` — Real-time HSV filtering and mask generation
 * `color_classifier.py` — Classifies colors using HSV ranges
 * `main.py` — Integrates detection and triggers servo positions
-
-### Folder Structure
-
-```
-roboarm-project/
-├── color_detection.py
-├── color_classifier.py
-├── main.py
-├── motion_controller.py
-├── requirements.txt
-├── README.md
-├── beaglebone_setup.md
-├── assets/
-│   ├── beagleboneBlue_pinout.jpg
-│   ├── pca9685_with_arduino_servo.jpg
-│   ├── hardware_connection.jpg
-│   ├── demo_detection.gif
-│   ├── demo_full_connection.gif
-│   ├── object&color_detection_output.jpg
-│   ├── bbb_servo_output_test.mp4
-│   ├── arm_workspace_diagram.jpg
-│   ├── bbb_webcam_demo_gui.jpg
-│   ├── sevo_driver_pca9685.jpg
-```
-
 ---
 
 ## Results & Demonstration
 
 ### Color Detection Output
 
-![Detection](assets/object&color_detection_output.jpg)
+![Detection](assets/object&color_detection_output.jpeg)
 
 ### Hardware Connection Diagram
 
-![Diagram](assets/hardware_connection.jpg)
+![Diagram](assets/hardware_connection.jpeg)
 
 ### Live Demos
 
