@@ -1,4 +1,4 @@
-# Robotic Arm Project — Color-Based Object Detection and Pick-and-Place (BeagleBone Blue)
+# Color based object identification and pick and place using BeagleBone Blue board
 
 A low-cost, edge-based robotic arm system using a USB camera and BeagleBone Blue. This project identifies objects based on color using computer vision and controls a 4-axis robotic arm through I2C-enabled servo driver or direct PWM outputs for pick-and-place tasks.
 
@@ -13,21 +13,6 @@ A low-cost, edge-based robotic arm system using a USB camera and BeagleBone Blue
 * Fully integrated with **BeagleBone Blue**
 * USB camera + live image processing
 * Wireless SSH/VNC + SD card expansion
-
----
-
-## System Overview
-
-```mermaid
-flowchart TD
-    CAM[USB Camera] --> BBB[BeagleBone Blue]
-    BBB --> CV[Color Detection (OpenCV)]
-    CV --> Classifier[Color Classifier]
-    Classifier --> Controller[Motion Controller]
-    Controller --> Driver[Servo Driver Board (I2C)]
-    Driver --> AR[4-Axis Robotic Arm]
-```
-
 ---
 
 ## Hardware Setup
@@ -46,13 +31,13 @@ flowchart TD
 
 ---
 
-## 💻 Software Overview
+## Software Overview
 
 * `color_detection.py` — Real-time HSV filtering and mask generation
 * `color_classifier.py` — Classifies colors using HSV ranges
 * `main.py` — Integrates detection and triggers servo positions
 
-### 📁 Folder Structure
+### Folder Structure
 
 ```
 roboarm-project/
@@ -78,62 +63,35 @@ roboarm-project/
 
 ---
 
-## 🖼️ Results & Demonstration
+## Results & Demonstration
 
-### 🎯 Color Detection Output
+### Color Detection Output
 
-![Detection](assets/object_detection_output.jpg)
+![Detection](assets/object&color_detection_output.jpg)
 
-### 🤖 Full Robotic Arm Setup
+### Hardware Connection Diagram
 
-![Setup](assets/setup_photo.jpg)
+![Diagram](assets/hardware_connection.jpg)
 
-### 🛠️ Hardware Connection Diagram
-
-![Diagram](assets/hardware_connection_diagram.svg)
-
-### 🎬 Live Demos
+### Live Demos
 
 #### Color & Object Detection
 
-![Color Detection](assets/demo_detection.gif)
+![Color Detection](assets/demo_detection(GIF).gif)
 
 #### Full Arm Movement (I2C-based Control)
 
-![Full Connection](assets/demo_full_connection.gif)
+![Full Connection](assets/demo_full_connection(GIF).gif)
 
 ---
 
-## ⚡ How to Run
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/roboarm-project.git
-cd roboarm-project
-```
-
-### 2. Install Dependencies
-
-```bash
-pip3 install -r requirements.txt
-```
-
-### 3. Run the Main Script
-
-```bash
-python3 main.py
-```
-
----
-
-## 📦 Requirements
+## Requirements
 
 See [`requirements.txt`](requirements.txt) for all Python + hardware-related dependencies.
 
 ---
 
-## 🧪 Additional Utilities
+## Additional Utilities
 
 * `rc_test_servos` — test individual servo channels
 * `fswebcam` — image testing via CLI
@@ -141,7 +99,7 @@ See [`requirements.txt`](requirements.txt) for all Python + hardware-related dep
 
 ---
 
-## 📌 Notes
+## Notes
 
 * Used Arduino for early arm functionality testing
 * LED blinking verified GPIO setup on BBB
@@ -150,14 +108,4 @@ See [`requirements.txt`](requirements.txt) for all Python + hardware-related dep
 
 ---
 
-## 🙋‍♂️ Author
 
-**Pawan**
-Robotics + AI Developer
-✉️ \[LinkedIn/GitHub/Website links if available]
-
----
-
-## 📄 License
-
-This project is open-source under the [MIT License](LICENSE).
