@@ -27,7 +27,7 @@ A low-cost, edge-based robotic arm system using a USB camera and BeagleBone Blue
 | External 5V Power      | Powers servos independently |
 | 16GB SD Card           | System expansion            |
 
-📘 Full setup instructions: [BeagleBone Blue Setup Guide](beaglebone_setup.md)
+📘 Full setup instructions: [BeagleBone Blue Setup Guide](beagleboneBlue_setupGuide.md)
 
 ---
 
