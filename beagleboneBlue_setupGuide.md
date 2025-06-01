@@ -28,9 +28,9 @@ This guide covers everything you need to set up a BeagleBone Blue (BBB) board to
 
 ---
 
-## Step 2: Boot from SD [Card](http://192.168.7.2)
+## Step 2: Boot from SD Card
 
-1. [Pre](http://192.168.7.2)ss and hold the **SD** button while powering the board.
+1. Press and hold the **SD** button while powering the board.
 2. Release after a few seconds to force boot from SD.
 3. Watch for **LEDs blinking in a Larson scanner pattern** (left to right) – indicates booting.
 
